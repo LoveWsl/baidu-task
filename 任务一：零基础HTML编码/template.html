@@ -107,22 +107,32 @@
 				<label for="password2">请重复输入密码</label>
 				<input type="password" name="password2" id="password2">
 				<p>密码请为6-16位英文数字</p>
-				<p></p>
-				<input type="radio" name="" id="female">
+				<span>性别：</span>
+				<input type="radio" name="sex" id="female" checked="checked">
 				<label for="female">男</label>
+				<input type="radio" name="sex" id="male">
 				<label for="male">女</label>
-				
-				
+				<span>城市：</span>
+				<select name="city">
+					<option value="beijing" selected>北京</option>
+					<option value="shanghai">上海</option>
+					<option value="hangzhou">杭州</option>
+					<option value="xiamen">厦门</option>
+				</select>
+				<span>爱好：</span>
+				<input type="checkbox" name="hobby" value="sports">运动
+				<input type="checkbox" name="hobby" value="art">艺术
+				<input type="checkbox" name="hobby" value="science">科学
+				<span>个人描述：</span>
+				<textarea></textarea>
+				<input type="submit" name="submit" value="提交">
 			</form>
 			
 		</aside>
 	</content>
-
-
-
-
-
-
+	<footer>
+		<span>版权所有©LoveWsl</span>
+	</footer>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 
