@@ -9,9 +9,23 @@
 	padding: 20px;
 	background:#eee;
 	border:1px #999 solid;
-	overflow: hidden;
+	/*清除浮动方法一*/
+/*	overflow: hidden;*/
 	min-width: 600px;
 }
+/*清除浮动方法二*/
+.container:before,
+.container:after{
+	content:"";
+	display:table;
+}
+.container:after{
+	clear:both;
+}
+/*清除浮动方法三*/
+/*.clear{
+	clear:both;
+}*/
 .left{
 	width:200px;
 	float:left;
