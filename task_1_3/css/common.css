@@ -14,12 +14,12 @@
 	min-width: 600px;
 }
 /*清除浮动方法二*/
-.container:before,
-.container:after{
+.clearfix:before,
+.clearfix:after{
 	content:"";
 	display:table;
 }
-.container:after{
+.clearfix:after{
 	clear:both;
 }
 /*清除浮动方法三*/
